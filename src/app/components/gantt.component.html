@@ -1,0 +1,27 @@
+<div class="form-container">
+    <form>
+        <pre>
+        </pre>
+        <div class="form-group">
+            <label for="status">Status:</label>
+            <select id="status" name="status" [(ngModel)]="selectedStatus" (change)="onChangeStatus($event)">
+                <option value="">Selecione um status</option>
+                <option value=1>Concluído</option>
+                <option value=0>Planejada</option>
+                <option value=0.1>Em andamento</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="maquina">Máquina:</label>
+            <select id="maquina" name="maquina" [(ngModel)]="selectedMac" (change)="onChangeMac($event)">
+                <option value="">Selecione um status</option>
+                <option *ngFor=" let m of mq" [value]="m.id">{{m.text}}</option>
+             </select>
+        </div>
+        <div class="form-group">
+            <label for="periodo">Período:</label>
+            <input type="date" id="periodo" name="periodo">
+        </div>
+    </form>
+</div>
+<div #gantt_here class='gantt-chart'></div>
