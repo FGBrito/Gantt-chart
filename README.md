@@ -1,8 +1,6 @@
 # Gantt
 
-This project was generated with Angular CLI version 8.3.29, API JSONPlaceholder, Angular Material e node version v14.18.1.
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0, dhtmlx-gantt e angular-in-memory-web-api.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0, dhtmlx-gantt, angular-in-memory-web-api e node version v20.11.1.
 
 ## Development install
 
